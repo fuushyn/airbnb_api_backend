@@ -15,10 +15,10 @@ const client = new ApifyClient({
 
 
 
-app.post('/fetch-url', async (req, res) => {
+app.post('/info', async (req, res) => {
   try {
     const { url } = req.body;
-    
+    console.log(url)
 // Prepare actor input
     const input = {
       "locationQuery": "Sacramento, California",
@@ -44,10 +44,11 @@ app.post('/fetch-url', async (req, res) => {
       // Fetch and print actor results from the run's dataset (if any)
       // console.log('Results from dataset');
       const { items } = await client.dataset(run.defaultDatasetId).listItems();
-      response = JSON.stringify(items)
+      let response = JSON.stringify(items)
+      res.json(JSON.parse(response))
     })();
 
-    res.json(response)
+    
 
 
   } catch (error) {
