@@ -1,6 +1,7 @@
 import { ApifyClient } from 'apify-client';
 import express, { response } from 'express';
 import cors from 'cors';
+import fetch from 'node-fetch';
 
 const app = express();
 app.use(express.json());
@@ -12,7 +13,87 @@ const client = new ApifyClient({
   token: 'apify_api_DlYDzu19yXawaFchGL3hRynEpwcK8x3uR5Bf',
 });
 
+function truncateString(str) {
+  // Split the string into an array of words
+  const words = str.split(' ');
 
+  // Extract the first 30 words
+  const truncatedWords = words.slice(0, 30);
+
+  // Join the words back into a string
+  const truncatedString = truncatedWords.join(' ');
+
+  // Add "..." at the end
+  const finalString = truncatedString + "...";
+
+  return finalString;
+}
+
+
+async function getReviewThumbnail(review, imgUrl){
+  let photoUrl = imgUrl.split('?')[0]
+  let name = review.author.firstName;
+  let pfp = review.author.pictureUrl;
+  let text = truncateString(review.comments);
+  let rating = review.rating;
+  const url = "https://sync.api.bannerbear.com/v2/images";
+  const data = {
+    "template": "20KwqnDErWL0bl17dY",
+    "modifications": [
+      {
+        "name": "image_container",
+        "image_url": photoUrl
+      },
+      {
+        "name": "border",
+        "color": null
+      },
+      {
+        "name": "quote",
+        "color": null,
+        "border_color": null,
+        "border_width": null
+      },
+      {
+        "name": "review",
+        "text": text,
+        "color": null,
+        "background": null
+      },
+      {
+        "name": "avatar",
+        "image_url": pfp
+          
+      },
+      {
+        "name": "name",
+        "text": name,
+        "color": null,
+        "background": null
+      },
+      {
+        "name": "star_rating",
+        "rating": `${20*rating}`
+      }
+    ],
+    "webhook_url": null,
+    "transparent": false,
+    "metadata": null
+  }
+  let respons = await fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+
+      "Authorization": "Bearer bb_pr_904bd184f385a5a9ecb1a682e4a195"
+    },
+    body: JSON.stringify(data),
+  })
+
+  let response_json = await respons.json()
+  console.log(response_json.image_url)
+  return response_json.image_url
+}
 
 
 app.post('/info', async (req, res) => {
@@ -21,20 +102,21 @@ app.post('/info', async (req, res) => {
     console.log(url)
 // Prepare actor input
     const input = {
-      "locationQuery": "Sacramento, California",
+      // "locationQuery": "Sacramento, California",
       "maxListings": 1,
       "startUrls": [  {
         "url": url
     }],
-      "maxReviews": 10,
+      "maxReviews": 0,
+      "locale": "en-US",
       "calendarMonths": 0,
       "currency": "USD",
       "proxyConfiguration": {
           "useApifyProxy": true
       },
       "maxConcurrency": 50,
-      "limitPoints": 100,
-      "timeoutMs": 60000
+      "limitPoints": 5,
+      "timeoutMs": 120000
     };
 
     (async () => {
@@ -44,8 +126,8 @@ app.post('/info', async (req, res) => {
       // Fetch and print actor results from the run's dataset (if any)
       // console.log('Results from dataset');
       const { items } = await client.dataset(run.defaultDatasetId).listItems();
-      let response = JSON.stringify(items)
-      res.json(JSON.parse(response))
+      let response = JSON.parse(JSON.stringify(items))
+      res.json(response)
     })();
 
     
@@ -56,6 +138,60 @@ app.post('/info', async (req, res) => {
     res.status(500).json({ message: 'Something went wrong.' });
   }
 });
+
+
+app.post('/reviews', async (req, res) => {
+  try {
+    const { url } = req.body;
+    console.log(url)
+// Prepare actor input
+    const input = {
+      // "locationQuery": "Sacramento, California",
+      "maxListings": 1,
+      "startUrls": [  {
+        "url": url
+    }],
+      "maxReviews": 5,
+      "locale": "en-US",
+      "calendarMonths": 0,
+      "currency": "USD",
+      "proxyConfiguration": {
+          "useApifyProxy": true
+      },
+      "maxConcurrency": 50,
+      "limitPoints": 5,
+      "timeoutMs": 120000
+    };
+
+    (async () => {
+      // Run the actor and wait for it to finish
+      const run = await client.actor("dtrungtin/airbnb-scraper").call(input);
+
+      // Fetch and print actor results from the run's dataset (if any)
+      // console.log('Results from dataset');
+      const { items } = await client.dataset(run.defaultDatasetId).listItems();
+      let response = JSON.parse(JSON.stringify(items))
+      let reviews = response[0].reviews
+      let photos = response[0].photos
+      let review_slides = []
+      for(let i = 0; i<5; i++){
+        let review_url = await getReviewThumbnail(reviews[i], photos[i].pictureUrl)
+        review_slides.push(review_url)
+      }
+
+      console.log(review_slides)
+      let res2 = {
+        "review_slides": review_slides
+      }
+      res.json(res2)
+
+    })();
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Something went wrong.' });
+  }
+});
+
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
