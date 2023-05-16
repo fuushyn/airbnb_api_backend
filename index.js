@@ -174,7 +174,7 @@ app.post('/reviews', async (req, res) => {
       let reviews = response[0].reviews
       let photos = response[0].photos
       let review_slides = []
-      for(let i = 0; i<5; i++){
+      for(let i = 0; i<3; i++){
         let review_url = await getReviewThumbnail(reviews[i], photos[i].pictureUrl)
         review_slides.push(review_url)
       }

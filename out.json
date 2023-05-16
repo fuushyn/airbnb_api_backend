@@ -1,2 +1,312 @@
-Results from dataset
 [
+  {
+      "url": "https://www.airbnb.com/rooms/668146487515150072",
+      "name": "Centre place Graslin - Chambre privée La Cambronne",
+      "stars": null,
+      "numberOfGuests": 2,
+      "address": "ननतेस, Pays de la Loire, फ़्रांस",
+      "roomType": "किराए का अपार्टमेंट में निजी कमरा",
+      "location": {
+          "lat": 47.21321,
+          "lng": -1.55979
+      },
+      "reviews": [
+          {
+              "author": {
+                  "firstName": "Bénédicte",
+                  "hasProfilePic": false,
+                  "id": "20011158",
+                  "pictureUrl": "https://a0.muscache.com/im/users/20011158/profile_pic/1414961810/original.jpg?aki_policy=profile_x_medium",
+                  "smartName": "Bénédicte",
+                  "thumbnailUrl": "https://a0.muscache.com/im/users/20011158/profile_pic/1414961810/original.jpg?aki_policy=profile_small"
+              },
+              "comments": "Chambre joliment meublée, agréable et propre bel environnement et accueil chaleureux.<br/>Cela fait du bien de poser ses valises dans cet endroit.<br/>Je recommande..",
+              "createdAt": "2023-04-15T11:33:06Z",
+              "id": "870079728441844083",
+              "collectionTag": null,
+              "rating": 5,
+              "recipient": {
+                  "firstName": "Golwen",
+                  "hasProfilePic": false,
+                  "id": "464257363",
+                  "pictureUrl": "https://a0.muscache.com/im/pictures/user/3816a6ef-5cc9-40ed-ae47-406646daa103.jpg?aki_policy=profile_x_medium",
+                  "smartName": "Golwen",
+                  "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/3816a6ef-5cc9-40ed-ae47-406646daa103.jpg?aki_policy=profile_small"
+              },
+              "response": null,
+              "localizedDate": "अप्रैल 2023",
+              "localizedReview": null
+          },
+          {
+              "author": {
+                  "firstName": "Johanna",
+                  "hasProfilePic": false,
+                  "id": "410646162",
+                  "pictureUrl": "https://a0.muscache.com/im/pictures/user/30ea7583-31c8-40d2-a839-89b4b9e96f29.jpg?aki_policy=profile_x_medium",
+                  "smartName": "Johanna",
+                  "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/30ea7583-31c8-40d2-a839-89b4b9e96f29.jpg?aki_policy=profile_small"
+              },
+              "comments": "Agréable séjour passé chez Dorothée et Golwen. Ces hôtes sont chaleureux et la décoration est de bon goût 😉 <br/>Lieux propres, conformes à la description et bien situé! Je recommande !",
+              "createdAt": "2023-04-07T11:11:25Z",
+              "id": "864270608649544542",
+              "collectionTag": null,
+              "rating": 5,
+              "recipient": {
+                  "firstName": "Golwen",
+                  "hasProfilePic": false,
+                  "id": "464257363",
+                  "pictureUrl": "https://a0.muscache.com/im/pictures/user/3816a6ef-5cc9-40ed-ae47-406646daa103.jpg?aki_policy=profile_x_medium",
+                  "smartName": "Golwen",
+                  "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/3816a6ef-5cc9-40ed-ae47-406646daa103.jpg?aki_policy=profile_small"
+              },
+              "response": null,
+              "localizedDate": "अप्रैल 2023",
+              "localizedReview": null
+          },
+          {
+              "author": {
+                  "firstName": "Andrée",
+                  "hasProfilePic": false,
+                  "id": "51519904",
+                  "pictureUrl": "https://a0.muscache.com/im/pictures/user/e2a37067-3853-4056-b122-4ae24e5ba846.jpg?aki_policy=profile_x_medium",
+                  "smartName": "Andrée",
+                  "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/e2a37067-3853-4056-b122-4ae24e5ba846.jpg?aki_policy=profile_small"
+              },
+              "comments": "Le logement de Golwen est topissime  .La chambre est spacieuse et magnifique,avec une excellente literie. L'appartement est situé au centre de Nantes, très calme ,tout se fait à pied. Golwen et son amie ont été adorables et m'ont bien renseignée. Je ne suis pas restée longtemps mais je reviendrai avec plaisir chez eux.Adresse à retenir.",
+              "createdAt": "2023-03-19T15:00:47Z",
+              "id": "850615314347945506",
+              "collectionTag": null,
+              "rating": 5,
+              "recipient": {
+                  "firstName": "Golwen",
+                  "hasProfilePic": false,
+                  "id": "464257363",
+                  "pictureUrl": "https://a0.muscache.com/im/pictures/user/3816a6ef-5cc9-40ed-ae47-406646daa103.jpg?aki_policy=profile_x_medium",
+                  "smartName": "Golwen",
+                  "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/3816a6ef-5cc9-40ed-ae47-406646daa103.jpg?aki_policy=profile_small"
+              },
+              "response": null,
+              "localizedDate": "मार्च 2023",
+              "localizedReview": null
+          },
+          {
+              "author": {
+                  "firstName": "Marine",
+                  "hasProfilePic": false,
+                  "id": "30828114",
+                  "pictureUrl": "https://a0.muscache.com/im/pictures/user/86409058-842a-4e04-b91a-385aa7df7300.jpg?aki_policy=profile_x_medium",
+                  "smartName": "Marine",
+                  "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/86409058-842a-4e04-b91a-385aa7df7300.jpg?aki_policy=profile_small"
+              },
+              "comments": "Très bon accueil chez Golwen. Chambre très jolie, salle de bain très agréablement chauffée... J'y étais pour raison professionnelle et pour une seule nuit mais je conseille et garde l'adresse pour un éventuel séjour touristique étant donné la situation idéale pour sillonner Nantes à pied... Merci!",
+              "createdAt": "2023-02-09T14:31:23Z",
+              "id": "823059041406360979",
+              "collectionTag": null,
+              "rating": 5,
+              "recipient": {
+                  "firstName": "Golwen",
+                  "hasProfilePic": false,
+                  "id": "464257363",
+                  "pictureUrl": "https://a0.muscache.com/im/pictures/user/3816a6ef-5cc9-40ed-ae47-406646daa103.jpg?aki_policy=profile_x_medium",
+                  "smartName": "Golwen",
+                  "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/3816a6ef-5cc9-40ed-ae47-406646daa103.jpg?aki_policy=profile_small"
+              },
+              "response": null,
+              "localizedDate": "फ़रवरी 2023",
+              "localizedReview": null
+          },
+          {
+              "author": {
+                  "firstName": "Morgane",
+                  "hasProfilePic": false,
+                  "id": "255968581",
+                  "pictureUrl": "https://a0.muscache.com/im/pictures/user/99da9047-f274-471d-a854-790e743f35be.jpg?aki_policy=profile_x_medium",
+                  "smartName": "Morgane",
+                  "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/99da9047-f274-471d-a854-790e743f35be.jpg?aki_policy=profile_small"
+              },
+              "comments": "Nous avons été très bien accueillis par Golwen, qui est très arrangeant et agréable. L’appartement est magnifique, très propre et très bien placé dans Nantes. Nous reviendrons avec grand plaisir ! Encore merci !",
+              "createdAt": "2023-02-05T14:10:04Z",
+              "id": "820149206284468888",
+              "collectionTag": null,
+              "rating": 5,
+              "recipient": {
+                  "firstName": "Golwen",
+                  "hasProfilePic": false,
+                  "id": "464257363",
+                  "pictureUrl": "https://a0.muscache.com/im/pictures/user/3816a6ef-5cc9-40ed-ae47-406646daa103.jpg?aki_policy=profile_x_medium",
+                  "smartName": "Golwen",
+                  "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/3816a6ef-5cc9-40ed-ae47-406646daa103.jpg?aki_policy=profile_small"
+              },
+              "response": null,
+              "localizedDate": "फ़रवरी 2023",
+              "localizedReview": null
+          }
+      ],
+      "pricing": {
+          "rate": {
+              "amount": 78,
+              "amountFormatted": "$78",
+              "currency": "USD",
+              "isMicrosAccuracy": false
+          },
+          "rateType": "nightly"
+      },
+      "photos": [
+          {
+              "caption": "Votre petit nid douillet « la Cambronne » de 20m2 comprend un lit Queen size, un espace bureau avec TV et une penderie pour ranger vos effets personnels ",
+              "pictureUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/7da9fd6a-8d6c-4954-88b0-1fc52abc9cfd.jpeg?aki_policy=large",
+              "thumbnailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/7da9fd6a-8d6c-4954-88b0-1fc52abc9cfd.jpeg?aki_policy=small"
+          },
+          {
+              "caption": "",
+              "pictureUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/41cbfe4c-56b1-4a67-8365-47a5894816a4.jpeg?aki_policy=large",
+              "thumbnailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/41cbfe4c-56b1-4a67-8365-47a5894816a4.jpeg?aki_policy=small"
+          },
+          {
+              "caption": "",
+              "pictureUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/9fa8d9d8-3136-4634-8769-3896efef8e11.jpeg?aki_policy=large",
+              "thumbnailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/9fa8d9d8-3136-4634-8769-3896efef8e11.jpeg?aki_policy=small"
+          },
+          {
+              "caption": "Charme de l'ancien avec cheminée d'époque",
+              "pictureUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/5bf7252a-1b94-4a85-aa3b-581c16d6bd69.jpeg?aki_policy=large",
+              "thumbnailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/5bf7252a-1b94-4a85-aa3b-581c16d6bd69.jpeg?aki_policy=small"
+          },
+          {
+              "caption": "Coin cocoon pour une pause café ou thé avec bouilloire",
+              "pictureUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/14e88b64-8a0a-403c-b542-f479e2f82eb2.jpeg?aki_policy=large",
+              "thumbnailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/14e88b64-8a0a-403c-b542-f479e2f82eb2.jpeg?aki_policy=small"
+          },
+          {
+              "caption": "",
+              "pictureUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/9bc72b47-5b93-43b2-ab45-e29a651aeb3f.jpeg?aki_policy=large",
+              "thumbnailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/9bc72b47-5b93-43b2-ab45-e29a651aeb3f.jpeg?aki_policy=small"
+          },
+          {
+              "caption": "",
+              "pictureUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/61613bcd-8346-4991-a59c-74104ed9d32c.jpeg?aki_policy=large",
+              "thumbnailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/61613bcd-8346-4991-a59c-74104ed9d32c.jpeg?aki_policy=small"
+          },
+          {
+              "caption": "Votre salle d'eau",
+              "pictureUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/7080e620-463d-42f1-8a56-93ec8efa69df.jpeg?aki_policy=large",
+              "thumbnailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/7080e620-463d-42f1-8a56-93ec8efa69df.jpeg?aki_policy=small"
+          },
+          {
+              "caption": "Votre salle d'eau",
+              "pictureUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/17c41100-785b-4207-b63a-5b419c833b45.jpeg?aki_policy=large",
+              "thumbnailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/17c41100-785b-4207-b63a-5b419c833b45.jpeg?aki_policy=small"
+          },
+          {
+              "caption": "",
+              "pictureUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/718574f5-3c8c-4a45-b889-9edea90ee0f5.jpeg?aki_policy=large",
+              "thumbnailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/718574f5-3c8c-4a45-b889-9edea90ee0f5.jpeg?aki_policy=small"
+          },
+          {
+              "caption": "",
+              "pictureUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/070adfcb-5350-4ddf-afb0-368f963c38f0.jpeg?aki_policy=large",
+              "thumbnailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/070adfcb-5350-4ddf-afb0-368f963c38f0.jpeg?aki_policy=small"
+          },
+          {
+              "caption": "La cuisine pour votre petit déjeuner, et vos repas en séjours longs de 7 nuits et +",
+              "pictureUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/af013622-1a9d-4746-9a0c-f76a0dc67eca.jpeg?aki_policy=large",
+              "thumbnailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/af013622-1a9d-4746-9a0c-f76a0dc67eca.jpeg?aki_policy=small"
+          },
+          {
+              "caption": "",
+              "pictureUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/2ae76019-9b9a-4b05-a40f-d1ed945b0761.jpeg?aki_policy=large",
+              "thumbnailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/2ae76019-9b9a-4b05-a40f-d1ed945b0761.jpeg?aki_policy=small"
+          },
+          {
+              "caption": "",
+              "pictureUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/ddae3557-35e9-4ac9-9b32-cd5c71aebf9e.jpeg?aki_policy=large",
+              "thumbnailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/ddae3557-35e9-4ac9-9b32-cd5c71aebf9e.jpeg?aki_policy=small"
+          },
+          {
+              "caption": "",
+              "pictureUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/e4daa9b9-b0c5-4372-9055-70a7437f1090.jpeg?aki_policy=large",
+              "thumbnailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/e4daa9b9-b0c5-4372-9055-70a7437f1090.jpeg?aki_policy=small"
+          },
+          {
+              "caption": "La vue de votre chambre sur les toits de Nantes",
+              "pictureUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-649243239350739668/original/d606964a-9c9e-4052-b4af-523433e6df91.jpeg?aki_policy=large",
+              "thumbnailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-649243239350739668/original/d606964a-9c9e-4052-b4af-523433e6df91.jpeg?aki_policy=small"
+          },
+          {
+              "caption": "L'entrée du logement",
+              "pictureUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-649243239350739668/original/46f36758-f188-44ef-aba5-2b379e004c6d.jpeg?aki_policy=large",
+              "thumbnailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-649243239350739668/original/46f36758-f188-44ef-aba5-2b379e004c6d.jpeg?aki_policy=small"
+          },
+          {
+              "caption": "",
+              "pictureUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/dd688862-6627-49d7-8925-8636795efa84.jpeg?aki_policy=large",
+              "thumbnailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/dd688862-6627-49d7-8925-8636795efa84.jpeg?aki_policy=small"
+          },
+          {
+              "caption": "",
+              "pictureUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/51c80bae-8e9d-4d9e-8ac9-6d46de035cb3.jpeg?aki_policy=large",
+              "thumbnailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/51c80bae-8e9d-4d9e-8ac9-6d46de035cb3.jpeg?aki_policy=small"
+          },
+          {
+              "caption": "",
+              "pictureUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/632a1b78-4b32-4078-8e0f-88b3000d86d4.jpeg?aki_policy=large",
+              "thumbnailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/632a1b78-4b32-4078-8e0f-88b3000d86d4.jpeg?aki_policy=small"
+          },
+          {
+              "caption": "",
+              "pictureUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?aki_policy=large",
+              "thumbnailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?aki_policy=small"
+          },
+          {
+              "caption": "",
+              "pictureUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/008adf9e-6b52-45bb-924b-38617885b489.jpeg?aki_policy=large",
+              "thumbnailUrl": "https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/008adf9e-6b52-45bb-924b-38617885b489.jpeg?aki_policy=small"
+          }
+      ],
+      "primaryHost": {
+          "id": 464257363,
+          "firstName": "Golwen",
+          "isSuperHost": true,
+          "hasProfilePic": true,
+          "smartName": "Golwen",
+          "about": "",
+          "memberSince": "जून 2022 में शामिल",
+          "languages": [
+              "English",
+              "Français",
+              "Deutsch"
+          ],
+          "responseRate": "100%",
+          "responseTime": "एक घंटे के अंदर",
+          "hasInclusionBadge": false,
+          "badges": [
+              "28 समीक्षाएँ",
+              "पहचान की पुष्टि हो गई"
+          ],
+          "hostUrl": "https://www.airbnb.com/users/show/464257363",
+          "pictureUrl": "https://a0.muscache.com/im/pictures/user/3816a6ef-5cc9-40ed-ae47-406646daa103.jpg?aki_policy=profile_large",
+          "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/3816a6ef-5cc9-40ed-ae47-406646daa103.jpg?aki_policy=profile_small"
+      },
+      "additionalHosts": [
+          {
+              "id": 58026078,
+              "firstName": "Dorothée",
+              "isSuperHost": false,
+              "hasProfilePic": true,
+              "smartName": "Dorothée",
+              "about": "",
+              "memberSince": "फ़रवरी 2016 में शामिल",
+              "languages": [],
+              "responseRate": "100%",
+              "responseTime": "एक घंटे के अंदर",
+              "hasInclusionBadge": false,
+              "badges": [],
+              "hostUrl": "https://www.airbnb.com/users/show/58026078",
+              "pictureUrl": "https://a0.muscache.com/im/pictures/user/5ef5c40c-d028-4ae9-b013-eb3b5b78f357.jpg?aki_policy=profile_large",
+              "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/5ef5c40c-d028-4ae9-b013-eb3b5b78f357.jpg?aki_policy=profile_small"
+          }
+      ],
+      "isHostedBySuperhost": true,
+      "isAvailable": true
+  }
+]
