@@ -45,9 +45,14 @@ async function callGptApi(str) {
   }); 
 
   const data = await response.json();
-  console.log(data)
-  console.log(data.choices[0].message.content);
-  return data.choices[0].message.content;
+  if(data.choices == null){
+    return callGptApi(str)
+  }
+  else{
+    console.log(data.choices[0].message.content);
+    return data.choices[0].message.content;
+  }
+
 }
 
 
