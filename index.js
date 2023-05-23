@@ -45,13 +45,17 @@ async function callGptApi(str) {
   }); 
 
   const data = await response.json();
-  if(data.choices == null){
-    return callGptApi(str)
-  }
-  else{
-    console.log(data.choices[0].message.content);
-    return data.choices[0].message.content;
-  }
+
+  console.log(data.choices[0].message.content);
+  return data.choices[0].message.content;
+
+  // if(data.choices == null){
+  //   return callGptApi(str)
+  // }
+  // else{
+  //   console.log(data.choices[0].message.content);
+  //   return data.choices[0].message.content;
+  // }
 
 }
 
@@ -226,8 +230,4 @@ app.post('/reviews', async (req, res) => {
   }
 });
 
-
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`Server listening on port ${port}.`);
-});
+ 
