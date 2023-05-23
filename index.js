@@ -7,34 +7,62 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+// import { Configuration, OpenAIApi } from "openai";
+
+// const configuration = new Configuration({
+//   apiKey: "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",
+// });
+
+// const openai = new OpenAIApi(configuration);
+
+
+
+
 
 // Initialize the ApifyClient with API token
 const client = new ApifyClient({
   token: 'apify_api_DlYDzu19yXawaFchGL3hRynEpwcK8x3uR5Bf',
 });
 
-function truncateString(str) {
-  // Split the string into an array of words
-  const words = str.split(' ');
+async function callGptApi(str) {
+  console.log(`Processing REVIEW - ${str}`);
+  const url = 'https://api.openai.com/v1/chat/completions';
 
-  // Extract the first 30 words
-  const truncatedWords = words.slice(0, 30);
+  const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer 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`
+      },
+      body: JSON.stringify({
+            "messages": [
 
-  // Join the words back into a string
-  const truncatedString = truncatedWords.join(' ');
+              {"role": "user", "content":`Get the most valuable sentence that captures the essence of this review from this review making sure that you capture the entire sentence from beginning to end - '${str}'`}
+          ],
+  
+          model: "gpt-3.5-turbo",
+      })
+  }); 
 
-  // Add "..." at the end
-  const finalString = truncatedString + "...";
-
-  return finalString;
+  const data = await response.json();
+  console.log(data)
+  console.log(data.choices[0].message.content);
+  return data.choices[0].message.content;
 }
+
+
+// async function truncateString(str) {
+//   console.log( `processing REVIEW - ${str}`)
+//   const finalrev = await callGptApi(`Get the most valuable sentence from this review making sure that you capture the entire sentence from beginning to end - '${str}'`)
+//   return finalrev;
+// }
 
 
 async function getReviewThumbnail(review, imgUrl){
   let photoUrl = imgUrl.split('?')[0]
   let name = review.author.firstName;
   let pfp = review.author.pictureUrl;
-  let text = truncateString(review.comments);
+  let text = await callGptApi(review.comments);
   let rating = review.rating;
   const url = "https://sync.api.bannerbear.com/v2/images";
   const data = {
@@ -173,9 +201,10 @@ app.post('/reviews', async (req, res) => {
       let response = JSON.parse(JSON.stringify(items))
       let reviews = response[0].reviews
       let photos = response[0].photos
+      
       let review_slides = []
-      for(let i = 0; i<3; i++){
-        let review_url = await getReviewThumbnail(reviews[i], photos[i].pictureUrl)
+      for(let i = 1; i<3; i++){
+        let review_url = await getReviewThumbnail(reviews[i], photos[3*i].pictureUrl)
         review_slides.push(review_url)
       }
 
@@ -197,7 +226,3 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server listening on port ${port}.`);
 });
-
-
-
-
