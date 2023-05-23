@@ -24,7 +24,10 @@ const client = new ApifyClient({
   token: 'apify_api_DlYDzu19yXawaFchGL3hRynEpwcK8x3uR5Bf',
 });
 
-async function callGptApi(str) {
+async function callGptApi(str, count) {
+  if(count ==0){
+    return; 
+  }
   console.log(`Processing REVIEW - ${str}`);
   const url = 'https://api.openai.com/v1/chat/completions';
 
@@ -46,16 +49,16 @@ async function callGptApi(str) {
 
   const data = await response.json();
 
-  console.log(data.choices[0].message.content);
-  return data.choices[0].message.content;
+  // console.log(data.choices[0].message.content);
+  // return data.choices[0].message.content;
 
-  // if(data.choices == null){
-  //   return callGptApi(str)
-  // }
-  // else{
-  //   console.log(data.choices[0].message.content);
-  //   return data.choices[0].message.content;
-  // }
+  if(data.choices == null){
+    return callGptApi(str, count -1)
+  }
+  else{
+    console.log(data.choices[0].message.content);
+    return data.choices[0].message.content;
+  }
 
 }
 
@@ -71,7 +74,7 @@ async function getReviewThumbnail(review, imgUrl){
   let photoUrl = imgUrl.split('?')[0]
   let name = review.author.firstName;
   let pfp = review.author.pictureUrl;
-  let text = await callGptApi(review.comments);
+  let text = await callGptApi(review.comments, 3);
   let rating = review.rating;
   const url = "https://sync.api.bannerbear.com/v2/images";
   const data = {
